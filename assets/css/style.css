@@ -22,3 +22,13 @@ h1{font-size:clamp(32px,6vw,56px);line-height:1.1;font-weight:800;margin:0 0 20p
 .more{color:var(--accent);font-weight:600}
 footer{max-width:960px;margin:80px auto 0;padding:24px 16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px;text-align:center}
 footer a:hover{color:var(--text)}
+.list+.list{margin-top:48px}
+.issues{border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.issue{display:grid;grid-template-columns:130px 1fr auto;gap:16px;align-items:center;padding:18px 24px;background:var(--panel);transition:background .15s}
+.issue+.issue{border-top:1px solid var(--border)}
+.issue:hover{background:#f0eeff}
+.issue .date{color:var(--muted);font-size:14px}
+.issue .title{font-weight:600}
+.issue small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:2px}
+.issue .go{color:var(--accent);font-weight:600}
+@media(max-width:600px){.issue{grid-template-columns:1fr;gap:4px}}
