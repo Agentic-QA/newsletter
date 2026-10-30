@@ -32,3 +32,4 @@ footer a:hover{color:var(--text)}
 .issue small{display:block;font-weight:400;color:var(--muted);font-size:14px;margin-top:2px}
 .issue .go{color:var(--accent);font-weight:600}
 @media(max-width:600px){.issue{grid-template-columns:1fr;gap:4px}}
+footer sup{font-size:.7em;line-height:0}
